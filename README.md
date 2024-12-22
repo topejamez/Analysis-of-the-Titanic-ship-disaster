@@ -97,6 +97,41 @@ new_survived.describe()
 
 ## Exploratory Data Analysis
 
+```
+# Count of number of dead and survived passengers with their percentages
+new_survived = pd.Categorical(titanic_train["Survived"])
+new_survived = new_survived.rename_categories(["Died","Survived"])
+new_survived.describe()
+
+# Count of passengers
+pd.crosstab(index=titanic_train["Sex"],
+columns="count")
+
+#table of survival vs sex
+survived_sex=pd.crosstab(index=titanic_train["Survived"],
+                        columns=titanic_train["Sex"])
+survived_sex.index=["Died","Survived"]
+survived_sex
+
+#table of survival vs passenger class
+survived_class=pd.crosstab(index=titanic_train["Survived"],
+                       columns=titanic_train["Pclass"])
+survived_class.column = ["Class1","Class2","Class3"]
+survived_class.index = ["Died","Survived"]
+survived_class
+
+# Percentage of Survival vs Passenger class
+survived_class/survived_class.loc["coltotal","All"]
+
+# Table of Survival vs sex and passenger class
+surv_sex_class=pd.crosstab(index=titanic_train["Survived"],
+                           columns=[titanic_train["Pclass"],
+                                   titanic_train["Sex"]],
+                           margins=True)   #include rows and column total
+surv_sex_class
+
+
+
 
 
 

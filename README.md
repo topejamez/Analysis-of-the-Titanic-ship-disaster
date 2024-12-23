@@ -10,7 +10,7 @@ Kaggle is the source of the dataset in CSV file. Python programming language on 
 
 ### Data Cleaning/Preparation
 
-To gain insights from a dataset, it is important to ensure the dataset is clean enough for doing that. I ensured the dataset was thoroughly cleaned to ensure the accuracy and integrity of my findings. The data cleaning and preparation processes I carried out include are shown in the codes below:
+It is important to ensure the dataset is clean enough to gain insights from a dataset. I ensured the dataset was thoroughly cleaned to ensure the accuracy and integrity of my findings. The data cleaning and preparation processes I carried out are shown in the codes below:
 
  ```python
 #load in some packages

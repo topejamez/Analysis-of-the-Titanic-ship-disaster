@@ -5,8 +5,10 @@
 I analyzed the Titanic ship disaster using Python and primarily focused on understanding the factors that contributed to passenger survival and identifying key insights from the available dataset to first, understand the distribution of passengers based on demographic and socio-economic factors. Secondly, identify the key factors that influenced survival rates. And lastly, draw actionable insights for safety improvements in maritime travel.
 
 ### Data Source
+Titanic data: The primary dataset used for this analysis is the titanic.csv file, which contains detailed information about the Titanic ship's survival rate and the contributing factors.
 
-Kaggle is the source of the dataset in CSV file. Python programming language on Kaggle is used to clean the dataset, format, transform, group, and carry out the analysis. Libraries used include Pandas, NumPy, Matplotlib, and Scikit-learn.
+### Tools
+Kaggle is the source of the dataset in the CSV file. Python programming language on Kaggle is used to clean the dataset, format, transform, group, and analyze. Libraries used include Pandas, NumPy, Matplotlib, and Scikit-learn.
 
 ### Data Cleaning/Preparation
 
@@ -136,11 +138,12 @@ survived_class
 ```
 ![survival vs passenger class](https://github.com/user-attachments/assets/c4b006de-3cdf-4a14-9fc1-8a4005792f87)
 
+
 ```python
-# Percentage of Survival vs Passenger class
-survived_class/survived_class.loc["coltotal","All"]
+#divide by column totals to get the percentage of survival vs sex passenger class
+surv_sex_class/surv_sex_class.loc["All"]
 ```
-![percentage of survival vs passenger class](https://github.com/user-attachments/assets/7e06558c-d347-4d89-bfcc-e5e2c72a6dc2)
+![percentage of survival vs sex and passenger class](https://github.com/user-attachments/assets/e5e8e810-4dd1-4741-97a2-61c1da17b5dd)
 
 ```python
 # Table of Survival vs sex and passenger class
@@ -151,12 +154,6 @@ surv_sex_class=pd.crosstab(index=titanic_train["Survived"],
 surv_sex_class
 ```
 ![table of survival vs sex and passenger class](https://github.com/user-attachments/assets/78bd8863-0759-47a5-8cec-e64a88be255c)
-
-```python
-#divide by column totals to get the percentage of survival vs sex passenger class
-surv_sex_class/surv_sex_class.loc["All"]
-```
-![percentage of survival vs sex and passenger class](https://github.com/user-attachments/assets/e5e8e810-4dd1-4741-97a2-61c1da17b5dd)
 
 ```python
 #table of survival vs cabin
@@ -186,8 +183,25 @@ survived_age
 ```
 ![table of survival vs age](https://github.com/user-attachments/assets/79d3a3be-3a60-4af2-93b1-84e217135300)
 
+### Results/Findings
+1. The number of females and males on board was 314 and 577, totaling 891 passengers.
+2. Total number of passengers that died is 549 which is 62% and for passengers that survived is 342 which is 38%.
+3. The class of passengers largely influenced survival as 76% of the third class passengers died followed by second class with 53% death and the least being first class with just 37% death. For their survival records, the first class has the highest with 63% survival, followed by the second class with 47% and the least being the third class with 24%.
+4. Further analysis of passenger class with sex shows that the sex of the passengers in each passenger class influenced survival. In the first class, out of 94 females, only 3 died while 91 survived, and out of 122 males, 77 died while only 45 survived. This trend follows for both second class and third class too.
+5. The survival rate with respect to the cabins was not of much help as a very high number of passenger cabins was not recorded. However, from the data provided for the cabin, we could see that cabins B and C recorded the highest number of deaths, and the same B and C had the highest survival.
+6. Passengers with the smaller family experienced more survival. Passengers with no family had the highest survival, followed by passengers with 1 and 2 families. Passengers with over 5 Familes experienced little or no survival.
+7. Passengers who are adults between the ages 18 to 34 recorded more deaths and survival, while passengers who are 60 years and above recorded the least deaths and survival. This is perhaps because there were more passengers between the ages 18 to 34 on board and fewer passengers who were over 60.
 
+### Key Challenges
+1. Missing data in the age and cabin columns affecting accurate analysis.
+2. Bias in survival rate caused by favoring women and children skewed survival pattern.
 
+### Conclusion
+Analyzing the Titanic disaster provides valuable insights into the factors influencing survival during emergencies. These findings are capable of informing future safety protocols and disaster response strategies in maritime and other transportation industries.
 
+### References
+1. Chatgpt
+2. Kaggle notebook
+   
 
 

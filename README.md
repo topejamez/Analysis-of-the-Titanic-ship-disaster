@@ -1,5 +1,25 @@
 # Analysis-of-the-Titanic-ship-disaster
 
+## Table of Content
+
+- [Project Overview](#project-overview)
+
+- [Data Source](#data-source)
+
+- [Tools](#tools)
+
+- [Data Cleaning/Preparation](#data-cleaningpreparation)
+
+- [Exploratory Data Analysis](#exploratory-data-analysis)
+
+- [Results/Findings](#resultsfindings)
+
+- [Key Challenges](#Key-Challenges)
+  
+- [Conclusion](#Conclusion)
+
+- [References](#references)
+
 ### Project Overview
 
 I analyzed the Titanic ship disaster using Python and primarily focused on understanding the factors that contributed to passenger survival and identifying key insights from the available dataset to first, understand the distribution of passengers based on demographic and socio-economic factors. Secondly, identify the key factors that influenced survival rates. And lastly, draw actionable insights for safety improvements in maritime travel.
@@ -188,7 +208,7 @@ survived_age
 2. Total number of passengers that died is 549 which is 62% and for passengers that survived is 342 which is 38%.
 3. The class of passengers largely influenced survival as 76% of the third class passengers died followed by second class with 53% death and the least being first class with just 37% death. For their survival records, the first class has the highest with 63% survival, followed by the second class with 47% and the least being the third class with 24%.
 4. Further analysis of passenger class with sex shows that the sex of the passengers in each passenger class influenced survival. In the first class, out of 94 females, only 3 died while 91 survived, and out of 122 males, 77 died while only 45 survived. This trend follows for both second class and third class too.
-5. The survival rate with respect to the cabins was not of much help as a very high number of passenger cabins was not recorded. However, from the data provided for the cabin, we could see that cabins B and C recorded the highest number of deaths, and the same B and C had the highest survival.
+5. The survival rate for the cabins was not of much help as a very high number of passenger cabins was not recorded. However, from the data provided for the cabin, we could see that cabins B and C recorded the highest number of deaths, and the same B and C had the highest survival.
 6. Passengers with the smaller family experienced more survival. Passengers with no family had the highest survival, followed by passengers with 1 and 2 families. Passengers with over 5 Familes experienced little or no survival.
 7. Passengers who are adults between the ages 18 to 34 recorded more deaths and survival, while passengers who are 60 years and above recorded the least deaths and survival. This is perhaps because there were more passengers between the ages 18 to 34 on board and fewer passengers who were over 60.
 
@@ -200,8 +220,7 @@ survived_age
 Analyzing the Titanic disaster provides valuable insights into the factors influencing survival during emergencies. These findings are capable of informing future safety protocols and disaster response strategies in maritime and other transportation industries.
 
 ### References
-1. Chatgpt
-2. Kaggle notebook
-   
+1. [ChatGPT](https://chat.openai.com)
+2. [Kaggle Notebook](https://www.kaggle.com)   
 
 
